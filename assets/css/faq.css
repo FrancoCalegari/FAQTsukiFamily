@@ -1,0 +1,167 @@
+/**Typeo CSS Start**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: #444;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding: 0px 15px;
+	margin: auto;
+}
+
+/**Typeo CSS End**/
+.faq-title {
+	text-align: center;
+	font-size: 45px;
+	font-weight: normal;
+}
+
+.faq-group {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+.faq-group .faq-left {
+	width: 38%;
+}
+
+.faq-group .faq-right {
+	width: 58%;
+	border-left: #ccc 1px solid;
+	padding-left: 30px;
+	margin-left: 4%;
+}
+
+.faq-group h3 {
+	font-size: 24px;
+	font-weight: normal;
+	margin: 35px 0 15px 0;
+}
+
+.faq-group h3:first-child {
+	margin-top: 0px;
+}
+.faq-btns {
+ margin-bottom: 40px;
+}
+.faq-btn {
+	width: 100%;
+	display: inline-block;
+	border: #000 1px solid;
+	border-radius: 4px;
+	text-align: center;
+	margin: 10px 0;
+	background-color: #fff;
+	padding: 14px;
+	text-decoration: none;
+	color: #000;
+	transition: 0.5s all;
+}
+
+.faq-btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.faq-item {
+	width: 100%;
+	margin: 7px 0px;
+	border-bottom: #ebebeb 1px solid;
+}
+
+.faq-item .faq-label {
+	position: relative;
+	width: 100%;
+	padding: 12px 26px 12px 0px;
+	cursor: pointer;
+	font-size: 18px;
+	color: #000;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.faq-item .faq-label i {
+	width: 18px;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.faq-item .faq-label i:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 18px;
+	height: 2px;
+	background-color: #000;
+}
+
+.faq-item .faq-label i:after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 2px;
+	height: 18px;
+	background-color: #000;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+}
+
+.faq-item.faq-item-show .faq-label i:after {
+	opacity: 0;
+}
+
+.faq-cont {
+	transition: 0.3s all;
+	overflow: hidden;
+	height: 0px;
+}
+
+.faq-item.faq-item-show  .faq-cont {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: auto;
+	height: auto;
+}
+
+.faq-cont p {
+	margin: 0px 0 20px 0;
+}
+
+.faq-cont p:last-child {
+	margin-bottom: 0px;
+}
+
+@media(max-width:992px) {
+	.faq-group .faq-left{
+  width: 100%;
+ }
+.faq-group .faq-right {
+ width: 100%;
+ border-left: none;
+ padding-left: 0;
+ margin-left: 0;
+}
+}	
