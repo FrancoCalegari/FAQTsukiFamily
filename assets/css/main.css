@@ -20,6 +20,19 @@
     --background-color: #8DBEE7;
     --text-color: #2c3e50;
     --accent-color: #e74c3c;
+
+
+    --color-jordy-blue-50: #f1f7fd;
+    --color-jordy-blue-100: #e0edf9;
+    --color-jordy-blue-200: #c9e0f4;
+    --color-jordy-blue-300: #a3cded;
+    --color-jordy-blue-400: #8dbee7;
+    --color-jordy-blue-500: #5895d9;
+    --color-jordy-blue-600: #437bcd;
+    --color-jordy-blue-700: #3a68bb;
+    --color-jordy-blue-800: #345699;
+    --color-jordy-blue-900: #2e497a;
+    --color-jordy-blue-950: #202e4b;
 }
 
 body {
@@ -120,60 +133,70 @@ nav ul li a:hover {
     }
 }
 
+.sectioncard {
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--color-jordy-blue-50);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
 #Servicios, #packs {
     padding: 4rem 2rem;
-    background-color: #b7f5ada8;
-    box-shadow: #2c3e50 0 2px 4px;
-    margin: 2rem 2rem;
-    width: 90%;
-    border-radius: 15px;
+
 
 }
 
 #Servicios h2, #packs h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: var(--color-jordy-blue-900);
 }
 
 #Servicios p, #packs p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--color-jordy-blue-900);
 }
 
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-
     gap: 2rem;
     justify-content: center;
     margin-top: 2rem;
 }
 
 .card {
-    background-color: white;
+    background-color: var(--color-jordy-blue-50);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     text-align: center;
-    width: calc(33.333% - 2rem);
+    width: calc(50.333% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--color-jordy-blue-700);
 }
 
 .card p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
-    color: var(--text-color);
+    color: var(--color-jordy-blue-900);
 }
 
 .card button {
-    background-color: var(--primary-color);
+    background-color: var(--color-jordy-blue-500);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -183,12 +206,12 @@ nav ul li a:hover {
 }
 
 .card button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--color-jordy-blue-700);
 }
 
 .packetContainer {
     padding: 2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--color-jordy-blue-200);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
@@ -196,6 +219,12 @@ nav ul li a:hover {
 
 .subpacketContainer {
     text-align: center;
+}
+
+.subpacketContaniner h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
 .subpacketContainer h3 {
@@ -212,7 +241,7 @@ nav ul li a:hover {
 }
 
 .pack {
-    background-color: white;
+    background-color: var(--color-jordy-blue-50);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -223,7 +252,7 @@ nav ul li a:hover {
 .pack h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--color-jordy-blue-700);
 }
 
 .pack p {
@@ -242,7 +271,7 @@ nav ul li a:hover {
 }
 
 .pack button {
-    background-color: var(--primary-color);
+    background-color: var(--color-jordy-blue-500);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -252,17 +281,77 @@ nav ul li a:hover {
 }
 
 .pack button:hover {
-    background-color: var(--accent-color);
+    background-color: var(--color-jordy-blue-700);
 }
-
 
 footer {
     background-color: var(--background-color);
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
 footer p {
     color: var(--text-color);
     font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.colab-container {
+    margin-bottom: 2rem;
+}
+
+.colab-container h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.colabdivcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.colab-container-card {
+    background-color: var(--color-jordy-blue-50);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colab-container-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.colab-container-card:hover {
+    transform: scale(1.05);
+}
+
+.importantlinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.importantlinks a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    background-color: var(--color-jordy-blue-500);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.importantlinks a:hover {
+    color: var(--accent-color);
+    background-color: var(--color-jordy-blue-700);
 }
