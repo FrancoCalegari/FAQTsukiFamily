@@ -217,12 +217,13 @@ nav ul li a:hover {
     margin-bottom: 2rem;
 }
 
-.subpacketContainer {
+.subpacketContaniner {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .subpacketContaniner h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
@@ -247,6 +248,11 @@ nav ul li a:hover {
     padding: 1.5rem;
     text-align: center;
     width: calc(33.333% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .pack h4 {
@@ -263,11 +269,19 @@ nav ul li a:hover {
 
 .packimgcontainer {
     margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-jordy-blue-500);
+    border: solid var(--color-jordy-blue-700) 5px;
+    overflow: hidden;
 }
 
 .packimgcontainer img {
-    max-width: 100%;
-    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
 }
 
 .pack button {
@@ -357,163 +371,3 @@ footer p {
 }
 
 
-/*Faqs row*/
-
-/**Typeo CSS Start**/
-
-
-.faqcontainer {
-	max-width: 1200px;
-	width: 100%;
-    height: 100vh;
-	padding: 0px 15px;
-	margin: auto;
-}
-
-/**Typeo CSS End**/
-.faq-title {
-	text-align: center;
-	font-size: 45px;
-	font-weight: normal;
-    margin: 2rem 1rem;
-}
-
-.faq-group {
-	display: flex;
-	flex-flow: row wrap;
-	width: 100%;
-}
-
-.faq-group .faq-left {
-	width: 38%;
-}
-
-.faq-group .faq-right {
-	width: 58%;
-	border-left: var(--color-jordy-blue-50) 1px solid;
-	padding-left: 30px;
-	margin-left: 4%;
-}
-
-.faq-group h3 {
-	font-size: 24px;
-	font-weight: normal;
-	margin: 35px 0 15px 0;
-}
-
-.faq-group h3:first-child {
-	margin-top: 0px;
-}
-.faq-btns {
- margin-bottom: 40px;
-}
-.faq-btn {
-	width: 100%;
-	display: inline-block;
-	border: var(--color-jordy-blue-950) 1px solid;
-	border-radius: 4px;
-	text-align: center;
-	margin: 10px 0;
-	background-color: #fff;
-	padding: 14px;
-	text-decoration: none;
-	color: var(--color-jordy-blue-950);
-	transition: 0.5s all;
-}
-
-.faq-btn:hover {
-	background-color: var(--color-jordy-blue-100);
-	color: var(--color-jordy-blue-950);
-}
-
-.faq-item {
-	width: 100%;
-	margin: 7px 0px;
-	border-bottom: var(--color-jordy-blue-50) 1px solid;
-}
-
-.faq-item .faq-label {
-	position: relative;
-	width: 100%;
-	padding: 12px 26px 12px 0px;
-	cursor: pointer;
-	font-size: 18px;
-	color: var(--color-jordy-blue-950);
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-}
-
-.faq-item .faq-label i {
-	width: 18px;
-	height: 100%;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-}
-
-.faq-item .faq-label i:before {
-	content: '';
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 18px;
-	height: 2px;
-	background-color: #000;
-}
-
-.faq-item .faq-label i:after {
-	content: '';
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 2px;
-	height: 18px;
-	background-color: #000;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-}
-
-.faq-item.faq-item-show .faq-label i:after {
-	opacity: 0;
-}
-
-.faq-cont {
-	transition: 0.3s all;
-	overflow: hidden;
-	height: 0px;
-}
-
-.faq-item.faq-item-show  .faq-cont {
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	overflow: auto;
-	height: auto;
-}
-
-.faq-cont p {
-	margin: 0px 0 20px 0;
-}
-
-.faq-cont p:last-child {
-	margin-bottom: 0px;
-}
-
-@media(max-width:992px) {
-	.faq-group .faq-left{
-  width: 100%;
- }
-.faq-group .faq-right {
- width: 100%;
- border-left: none;
- padding-left: 0;
- margin-left: 0;
-}
-}	

@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+    #Servicios, #packs {
+        padding: 2rem 1rem;
+    }
+
+    #Servicios h2, #packs h2 {
+        font-size: 2rem;
+    }
+
+    #Servicios p, #packs p {
+        font-size: 1rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .packetContainer {
+        padding: 1.5rem;
+    }
+
+    .subpacketContainer h3 {
+        font-size: 1.75rem;
+    }
+
+    .packs {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .pack {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .pack h4 {
+        font-size: 1.25rem;
+    }
+
+    .pack p {
+        font-size: 0.9rem;
+    }
+}
