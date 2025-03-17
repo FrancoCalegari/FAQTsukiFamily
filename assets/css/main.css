@@ -193,9 +193,10 @@ nav ul li a:hover {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     color: var(--color-jordy-blue-900);
+    
 }
 
-.card button {
+.card a {
     background-color: var(--color-jordy-blue-500);
     color: white;
     border: none;
@@ -203,9 +204,10 @@ nav ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.card button:hover {
+.card a:hover {
     background-color: var(--color-jordy-blue-700);
 }
 
@@ -284,7 +286,7 @@ nav ul li a:hover {
     padding: 1rem;
 }
 
-.pack button {
+.pack a {
     background-color: var(--color-jordy-blue-500);
     color: white;
     border: none;
@@ -292,9 +294,10 @@ nav ul li a:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.pack button:hover {
+.pack a:hover {
     background-color: var(--color-jordy-blue-700);
 }
 
