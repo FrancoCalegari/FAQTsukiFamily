@@ -8,3 +8,22 @@ items.forEach(function (t) {
 		});
 	});
 });
+
+
+let endDate = new Date("April 4, 2025").getTime();
+let currentDateElement = document.getElementById("currentDate");
+
+function updateDate() {
+	let now = new Date().getTime();
+	if (now >= endDate) {
+		let endDateObj = new Date(endDate);
+		currentDateElement.innerHTML = endDateObj.toLocaleDateString("es-ES", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+		clearInterval(dateInterval);
+	} else {
+		let currentDate = new Date();
+		currentDateElement.innerHTML = currentDate.toLocaleDateString("es-ES", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+	}
+}
+
+let dateInterval = setInterval(updateDate, 1000);
+updateDate();
